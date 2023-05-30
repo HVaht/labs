@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-  
+
   <title>PlainDraggable Example</title>
   <style>
     body {
@@ -84,10 +84,10 @@
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   <script src="plain-draggable/plain-draggable.min.js"></script>
   <script>
-$(document).ready(function() {
-  new PlainDraggable('.card', { handle: '.handle' });
-});
-    
+    window.addEventListener('load', function() {
+      new PlainDraggable('.card', { handle: '.handle' });
+    });
+
 
     $(function() {
       var $grid = $('.grid');
