@@ -84,9 +84,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="plain-draggable/plain-draggable.min.js"></script>
   <script>
-    $(function() {
-      new PlainDraggable('.card', { handle: '.handle', snap: false });
-    });
+$(document).ready(function() {
+  new PlainDraggable('.card', { handle: '.handle' });
+});
+    
 
     $(function() {
       var $grid = $('.grid');
